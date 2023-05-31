@@ -49,8 +49,8 @@ def main():
     except:
         st.warning("Prediction error")
     
-    if st.button('send whatsapp message'):
-        pywhatkit.sendwhatmsg_instantly('+919072718041','ഹായ് നിങ്ങളുടെ ഫീൽഡിൽ ബിപിഎച്ച് സാന്നിധ്യമുണ്ട്, ദയവായി ആവശ്യമായ നടപടികൾ കൈക്കൊള്ളുകയും കൃഷി ഓഫീസർമാരെ എത്രയും വേഗം അറിയിക്കുകയും ചെയ്യുക',45,tab_close=True)
+    # if st.button('send whatsapp message'):
+    #     pywhatkit.sendwhatmsg_instantly('+919072718041','ഹായ് നിങ്ങളുടെ ഫീൽഡിൽ ബിപിഎച്ച് സാന്നിധ്യമുണ്ട്, ദയവായി ആവശ്യമായ നടപടികൾ കൈക്കൊള്ളുകയും കൃഷി ഓഫീസർമാരെ എത്രയും വേഗം അറിയിക്കുകയും ചെയ്യുക',7,tab_close=True)
 
 if __name__ == "__main__": 
     main()
