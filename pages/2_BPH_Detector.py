@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import pywhatkit
+# import pywhatkit
 
 from joblib import load
 st.set_page_config(
