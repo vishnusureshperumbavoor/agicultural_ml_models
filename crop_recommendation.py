@@ -1,13 +1,16 @@
 import pandas as pd
 import streamlit as st
-from joblib import load
+import pickle
 st.set_page_config(
     page_title="Multiplage App",
     page_icon=" "
 )
 
 def main():
-    dtc_model = load('crop_recommendation.json')
+    with open('crop_recommendation.pkl', 'rb') as f:
+        dtc_model = pickle.load(f)
+
+    
     html_temp="""
         <div style="background-color:lightblue;padding:16px">
             <h2 style="color:black;text-align:center;">Crop Recommendation using Decision Tree Classifier</h2>
