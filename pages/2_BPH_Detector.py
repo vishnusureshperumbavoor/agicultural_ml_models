@@ -41,10 +41,8 @@ def main():
     try:
         if st.button('Predict'):
             pred = xgb_model.predict(user_input)
-            #st.balloons()
+            st.balloons()
             st.success("Probability of BPH = {:.3f}".format(pred[0]))
-            if pred == 1.000:
-                pywhatkit.sendwhatmsg('+918714267479','hello how are you')
 
     except:
         st.warning("Prediction error")

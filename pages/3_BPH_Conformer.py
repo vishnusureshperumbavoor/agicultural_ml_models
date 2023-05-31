@@ -42,9 +42,8 @@ def main():
     xgb_model.predict(user_input)
     try:
         if st.button('Predict'):
-            pred = xgb_model.predict(user_input)
-            #st.balloons()
-            st.success("Probability of BPH = {:.3f}".format(pred[0]))
+            xgb_model.predict(user_input)
+            st.balloons()
 
     except:
         st.warning("Prediction error")
