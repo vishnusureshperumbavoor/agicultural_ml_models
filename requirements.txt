@@ -8,4 +8,4 @@ lightgbm
 numpy
 pandas
 pywhatkit
-xgboos
+xgboost
