@@ -4,8 +4,8 @@ from joblib import load
 # import pywhatkit
 
 st.set_page_config(
-    page_title="Multiplage App",
-    page_icon=" "
+    page_title="Agri Sense",
+    page_icon="🌾"
 )
 
 def main():
@@ -40,11 +40,10 @@ def main():
         'color':p2,
     },index=[0])
 
-    xgb_model.predict(user_input)
     try:
         if st.button('Predict'):
-            xgb_model.predict(user_input)
-            st.balloons()
+            pred = xgb_model.predict(user_input)
+            st.success("Probability of BPH = {:.0%}".format(pred[0]))
 
     except:
         st.warning("Prediction error")

@@ -3,6 +3,11 @@ import streamlit as st
 from joblib import load
 import datetime
 
+st.set_page_config(
+    page_title="Agri Sense",
+    page_icon="🌾"
+)
+
 def main():
     rfr_model = load('crop_price_prediction.json')
     html_temp="""
@@ -77,15 +82,11 @@ def main():
 
     try:
         if st.button('Predict'):
-            print(p6)
-            print(p6.day)
             pred = rfr_model.predict(user_input)
-            #st.balloons()
             st.success("Modal Price = {:.2f} Rs./Quintal".format(pred[0]))
+            #st.balloons()
     except:
         st.warning("You can't cultivate crops in this land")
-
-
     
 if __name__ == "__main__":
     main()

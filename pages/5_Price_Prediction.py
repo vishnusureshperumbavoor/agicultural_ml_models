@@ -3,6 +3,11 @@ import streamlit as st
 from joblib import load
 import datetime
 
+st.set_page_config(
+    page_title="Agri Sense",
+    page_icon="🌾"
+)
+
 def main():
     rfr_model = load('crop_price_prediction.json')
     html_temp="""
