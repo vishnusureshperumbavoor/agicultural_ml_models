@@ -1,8 +1,8 @@
 import pandas as pd
 import streamlit as st
 # import pywhatkit
-
 from joblib import load
+
 st.set_page_config(
     page_title="Multiplage App",
     page_icon=" "

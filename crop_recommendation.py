@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import pickle
+from joblib import load
 
 st.set_page_config(
     page_title="Agri Sense",
@@ -27,9 +27,7 @@ st.set_page_config(
 
 def main():
     
-    with open('crop_recommendation.pkl', 'rb') as f:
-        dtc_model = pickle.load(f)
-
+    dtc_model = load('crop_recommendation.json')
     
     html_temp="""
         <div style="background-color:lightblue;padding:16px">
