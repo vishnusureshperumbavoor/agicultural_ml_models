@@ -7,7 +7,7 @@ def main():
     rfr_model = load('crop_price_prediction.json')
     html_temp="""
         <div style="background-color:lightblue;padding:16px">
-            <h2 style="color:black;text-align:center;">Crop Yield Prediction using eXtreme Gradient Boosting</h2>
+            <h2 style="color:black;text-align:center;">Crop Yield Prediction using XGBoost</h2>
         </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)

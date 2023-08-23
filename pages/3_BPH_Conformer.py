@@ -11,7 +11,7 @@ def main():
     xgb_model = load('bph_prediction2.json')
     html_temp="""
         <div style="background-color:lightblue;padding:16px">
-            <h2 style="color:black;text-align:center;">BPH Detection using eXtreme Gradient Boosting</h2>
+            <h2 style="color:black;text-align:center;">BPH Detection using XGBoost</h2>
         </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
