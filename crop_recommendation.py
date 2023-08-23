@@ -1,11 +1,13 @@
 import pandas as pd
 import streamlit as st
 import pickle
-import base64
+
 st.set_page_config(
     page_title="Agri Sense",
     page_icon="🌾"
 )
+
+# add background image
 
 # def add_bg_from_local(image_file):
 #     with open(image_file, "rb") as image_file:
@@ -22,8 +24,6 @@ st.set_page_config(
 #     unsafe_allow_html=True
 #     )
 # add_bg_from_local('images/background_image.png')  
-
-
 
 def main():
     
@@ -68,6 +68,5 @@ def main():
         st.warning("You can't cultivate crops in this land")
 
 
-    
 if __name__ == "__main__":
     main()

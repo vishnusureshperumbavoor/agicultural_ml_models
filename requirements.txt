@@ -1,11 +1,4 @@
-streamlit
-scikit-learn
-joblib
-matplotlib
-seaborn
-plotly
-lightgbm
-numpy
 pandas
-# pywhatkit
-# xgboost
+streamlit
+joblib
+#pywhatkit
