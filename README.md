@@ -22,3 +22,11 @@ Afwan Sha J
 • numpy <br>
 • pandas (to play around spreadsheet data) <br>
 • Streamlit (frontend)
+
+## How to use
+```
+git clone https://github.com/vishnusureshperumbavoor/awega_mes_aimat_2023.git
+code awega_mes_aimat_2023
+pip install -r requirements.txt
+streamlit run Price_Prediction.py
+```
